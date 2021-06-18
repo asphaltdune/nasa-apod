@@ -1,0 +1,59 @@
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* NASA API IMAGES OF THE DAY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
+html {font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;}
+
+body {
+  font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  background-color:#000;
+  margin:0;
+  overflow-x:hidden;
+}
+
+strong{font-weight:500;}
+h1, h2, h3, h4, h5, h6{font-size: 12px;font-weight:500;}
+
+a {text-decoration: none;color: #000;}
+a:hover {color: #c91248;}
+a:hover {-webkit-transition: color 400ms ease-out;-moz-transition: color 400ms ease-out;}
+
+::-moz-selection {background: rgba(200, 200, 200, 1.0); color: #000; text-shadow: none;}
+::selection {background: rgba(200, 200, 200, 1.0);color: #000;text-shadow: none;}
+
+/* Site */
+#name{position:fixed;top;0;left:0;height:60px;line-height: 60px;padding:0 20px;}
+#name a{color:#fff;}
+.container{position:relative;display:flex;flex-direction:column;align-items:center;margin:40px 0;}
+
+.loader{height:100vh;width:100vw;display:flex;justify-content: center;align-items: center;position:fixed;z-index:10;}
+.nav-container{position:fixed;z-index:10;top:0;left:0;right:0;height:60px;line-height: 60px;width:100%;background:#000;}
+.nav-items{height:60px;line-height: 60px;display:flex;justify-content: center;}
+.nav-items li{display:inline-block;margin:0 10px;}
+
+.clickable{color:#c91248;cursor:pointer;user-select:none;}
+.clickable:hover{color:#ad1332;}
+
+.images-container{width:600px;}
+
+.card{margin:40px 0;}
+.card:hover {}
+.card-img-top{width:100%;height:auto;}
+.card-body{padding:0 0 20px;}
+.card-title{margin:10px auto 0;font-size:12px;}
+
+.fav{padding:10px 0;}
+
+/* SAVE CONFIRMATION */
+.save-confirmed{background:#c91248;color:#fff;padding:10px 30px;transition:0.3s;position:fixed;bottom:10px;right:10px;z-index: 20;}
+/* Hidden*/
+.hidden{display:none;}
+
+@media screen and (max-width: 800px){
+	body{line-height:1.4rem;}
+	.images-container{width:100%;}
+	.card-body{padding:0 20px 20px;}
+}

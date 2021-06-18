@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA API Pictures</title>
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=nasa.gov">
+  <meta name="description" content="Keep your favorite articles from NASA's blog feed.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="loader hidden"><img src="loader.svg" alt="Loading Animation"></div>
+<nav class="nav-container">
+	<h1 id="name"><a href="index.html">NASA Pictures</a></h1>
+	<ul class="nav-items" id="resultsNav">
+		<li class="clickable" onclick="updateDOM('favorites')">Favorites</li>
+		<li class="clickable" onclick="getNasaPictures()">Load More</li>
+	</ul>
+	<ul class="nav-items hidden" id="favoritesNav">
+		<li class="clickable" onclick="getNasaPictures()">View More</li>
+	</ul>
+</nav>
+<main class="container">
+	<div class="images-container"></div>
+</main>
+<div class="save-confirmed" hidden><h1>Added!</h1></div>
+<script src="script.js"></script>
+</body>
+</html>
